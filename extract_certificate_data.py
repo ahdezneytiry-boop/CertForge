@@ -43,7 +43,7 @@ for row in ws.iter_rows(min_row=2, values_only=True):
 
 payload = {
     "issuer": "徐州医科大学",
-    "event": "“正大杯”第十六届全国大学生市场调查与分析大赛校级选拔赛",
+    "event": "“正大杯”第十六届校级选拔赛",
     "date": "2026年6月23日",
     "records": records,
 }

@@ -138,7 +138,7 @@ try {
         Add-Textbox -Text $payload.event -Left 155 -Top 57 -Width 532 -Height 24 -Size 13.5 -Color "#9E6A19" -Bold $false | Out-Null
         Add-Textbox -Text "荣誉证书" -Left 0 -Top 94 -Width $pageW -Height 64 -Size 45 -Color "#8A2D1F" -Bold $true -Font "SimHei" | Out-Null
 
-        $teamLine = "$($payload.issuer)参赛团队「$($r.team_name)」的参赛作品"
+        $teamLine = "$($payload.issuer)参赛团队「$($r.team_name)」的"
         Add-Textbox -Text $teamLine -Left 110 -Top 184 -Width 622 -Height 30 -Size 19 -Color "#1D1D1D" -Bold $true | Out-Null
 
         $titleText = "《$($r.work_title)》"
@@ -151,7 +151,7 @@ try {
         Add-Textbox -Text $r.award_display -Left 0 -Top 331 -Width $pageW -Height 42 -Size 24 -Color "#8A2D1F" -Bold $true -Font "SimHei" | Out-Null
         Add-Textbox -Text "特发此证，以资鼓励。" -Left 0 -Top 380 -Width $pageW -Height 28 -Size 17 -Color "#222222" | Out-Null
 
-        Add-Textbox -Text "团队学生成员：$($r.members)" -Left 158 -Top 427 -Width 526 -Height 28 -Size 15.5 -Color "#1A1A1A" -Align $wdAlignLeft -Vertical $msoAnchorMiddle | Out-Null
+        Add-Textbox -Text "团队成员：$($r.members)" -Left 158 -Top 427 -Width 526 -Height 28 -Size 15.5 -Color "#1A1A1A" -Align $wdAlignLeft -Vertical $msoAnchorMiddle | Out-Null
         Add-Textbox -Text "指导教师：$($r.teacher)" -Left 158 -Top 459 -Width 526 -Height 28 -Size 15.5 -Color "#1A1A1A" -Align $wdAlignLeft -Vertical $msoAnchorMiddle | Out-Null
 
         Add-Textbox -Text "颁发单位：$($payload.issuer)" -Left 470 -Top 491 -Width 250 -Height 24 -Size 14.5 -Color "#1A1A1A" -Align $wdAlignLeft | Out-Null

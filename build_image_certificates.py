@@ -148,7 +148,7 @@ def make_page(bg, payload, record, index):
     draw_centered_box(draw, record["award_display"], (0, 1375, W, 185), award_font, "#8A2D1F", max_lines=1)
     draw_centered_box(draw, "特发此证，以资鼓励。", (0, 1583, W, 104), sentence_font, "#222222", max_lines=1)
 
-    draw_left_box(draw, f'团队学生成员：{record["members"]}', (660, 1780, 2200, 120), detail_font, "#1A1A1A")
+    draw_left_box(draw, f'团队成员：{record["members"]}', (660, 1780, 2200, 120), detail_font, "#1A1A1A")
     draw_left_box(draw, f'指导老师：{record["teacher"]}', (660, 1910, 2200, 104), detail_font, "#1A1A1A")
 
     draw_left_box(draw, f'颁发单位：{payload["issuer"]}', (1960, 2050, 1080, 92), small_font, "#1A1A1A")
